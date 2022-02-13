@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/*
+      ///////////////////////////////////////////////////////////////
+     //               AUTOR: Domenic Büchler                      //
+    //                     version: 1.0                          //
+   //                   Datum: 11.02.2022                       //
+  //                                                           //
+ //                beschriebung: Taschenrechner               // 
+///////////////////////////////////////////////////////////////
+*/
+
+
+ h1{
+    text-align: center;
+ }
+ area{
+     cursor: pointer;
+ }
+output{
+    position:absolute;
+    text-align: right;
+    font-weight: bold;
+    top: 65px;
+    left: 70px;
+    min-width: 155px;
+    max-width: 156px;
+    height: 55px;
+    font-size: 20px;
+    overflow: hidden;
+}
