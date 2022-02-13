@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Domenic Büchler">
+   <meta name="descripton" content="beschreiung der Webseite ...">
+   <meta name="keywords" content="html, css, JS">
+
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/faker.js"></script>
+   <script src="https://rawgit.com/icebob/fakerator/master/dist/fakerator.js"></script>
+   <script src="js/chart.js"></script>
+   <script src="js/getdata.js"></script>
+   <script src="js/main.js"></script>
+   
+   <title>Aufgabe 4 Marketing</title>
+
+</head>
+<body>
+
+   <h2>
+      Marketing Tool mit Chart.js
+   </h2>
+
+   <main>
+
+   <div id="occupied">
+      <h1>Occupied</h1>
+      <div class="canvasring">
+      
+      <canvas id="canvasoccupied"></canvas>
+      </div>
+      <select id="occupied_data">
+         <option value=""></option>
+      </select>
+   </div>
+
+   <div id="age">
+      <h1>Age</h1>
+      <div class="canvas">
+      
+      <canvas id="canvasage"></canvas>
+      </div>
+      <select id="age_data">
+         <option value=""></option>
+      </select>
+   </div>
+
+   <div id="year">
+      <h1>Registered per Year</h1>
+      <div class="canvas">
+      
+      <canvas id="canvasregistered"></canvas>
+      </div>
+      <select id="registered_data">
+         <option value=""></option>
+      </select>
+   </div>
+
+</main>
+
+<aside>
+
+   <div id="tablecontainer" class="posi"></div>
+      
+</aside>
+
+</body>
+</html>
