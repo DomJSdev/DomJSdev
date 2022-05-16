@@ -1,0 +1,16 @@
+{
+  "name": "aufgabe-8-electron-todo-liste",
+  "version": "1.0.0",
+  "description": "TODO Liste",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Domenic Büchler",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^18.0.4"
+  }
+}

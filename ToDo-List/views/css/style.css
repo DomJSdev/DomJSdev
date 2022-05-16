@@ -1,0 +1,67 @@
+body{
+    text-align: center;
+    background: radial-gradient(blue,black);
+    color: white;
+    
+}
+:root {
+    --globalheight:34px;
+}
+table{
+    margin: 10px auto;
+}
+input{
+    text-align: center;
+    width: 200px;
+    height: var(--globalheight);
+    /* background: radial-gradient(gray,black); */
+    border-radius: 20px;    
+}
+select,input[type="time"]{
+    font-size: large;
+    text-align: center;
+    width: 105px;
+    height: var(--globalheight);
+    background: radial-gradient(gray,black);
+    color: white;
+    border-radius: 20px;
+}
+option{
+    background-color: black;
+}
+ul{
+    list-style-type: none;
+}
+#output section{
+    text-align: center;
+}
+#output div{
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto 10px auto;
+    box-shadow: 5px 5px rgba(128, 128, 128,.5);
+    font-size: large;
+}
+input{
+    text-align: center;
+}
+#error{
+    color: red;
+    height: 30px;
+    margin-bottom: 10px;
+}
+#eintrag button{
+    width: 100px;
+    height: 42px ;
+    background: radial-gradient(gray,black);
+    color: white;
+    border-radius: 20px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+#optionen select,label{
+    margin-bottom: 10px;
+}
