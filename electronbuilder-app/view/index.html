@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/check.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Electron Builder</title>
+
+</head>
+<body>
+    <h1>Electron Builder App</h1>
+    <p id="output"></p>
+    
+    <section>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><label for="version">version:</label></td>
+                <td><input type="text" name="version" id="version"></td>
+            </tr>
+            <tr>
+                <td><label for="path">pfad:</label></td>
+                <td><input type="text" name="path" id="path"></td>
+            </tr>
+            <tr>
+                <td><label for="img">Img:</label></td>
+                <td><input type="text" name="img" id="img"></td>
+            </tr>
+            <tr>
+                <td><label for="appId">appId:</label></td>
+                <td><input type="text" name="appId" id="appId"></td>
+            </tr>
+            <tr>
+                <td><label for="productName">productName:</label></td>
+                <td><input type="text" name="productName" id="productName"></td>
+            </tr>
+            <tr>
+                <td><label for="copyright">copyright:</label></td>
+                <td><input type="text" name="copyright" id="copyright"></td>
+            </tr>
+            <tr>
+                <td><label for="description">description:</label></td>
+                <td><input type="text" name="description" id="description"></td>
+            </tr>
+            <tr>
+                <td><label for="author">author:</label></td>
+                <td><input type="text" name="author" id="author"></td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+    
+    <ul>
+        <li><label for="system">Betriebssystem:</label></li>
+        <li>
+            <label for="system">windows</label>
+            <input type="checkbox" name="win" id="win" checked>
+
+            <label for="system">mac</label>
+            <input type="checkbox" name="mac" id="mac">
+        
+            <label for="system">linux</label>
+            <input type="checkbox" name="tdnux" id="linux">
+        </li>
+        <li>
+            <div id="mac-category" hidden>
+                <label for="category">mac category</label>
+                <select name="category" id="category"></select>
+            </div>
+        </li>
+        <li>
+            <div id="win-category" hidden>
+                <label for="winColor">windows setup color</label> <br>
+                <input type="text" name="winColor" id="winColor" size="20"></input>
+            </div>
+        </li>
+    </ul>
+
+    <button type="button">senden</button>
+
+</body>
+</html>
