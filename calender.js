@@ -1,5 +1,17 @@
 'use strict';
 
+/*
+einbinden ins Project 
+
+let deliveryCalender = new Calender('red')
+
+    document.querySelector('body').appendChild(deliveryCalender.HtmlCalender) 
+    document.querySelector('body').onclick =(evt)=> {
+        let event = deliveryCalender.listen(evt)
+        console.log(event)
+    }
+*/
+
 /**
  * sectionWith = 'fit-content' 
  * sectionHeight = 'fit-content'
@@ -45,10 +57,7 @@ export class Calender {
     this.width = '100%';
     this.height = '100%';
 
-
-
-    this.events = [{ date: '02.01.2022', massage: 'Katz füttern ' },{ date: '20.03.2022', massage: 'Katz füttern ' },{ date: '27.01.2022', massage: 'Katz füttern ' },{ date: '07.10.2022', massage: 'Katz füttern ' },{ date: '17.12.2022', massage: 'Katz füttern ' }, { date: '20.05.2022', massage: 'was weiß ich ' }];
-
+    this.events = [{ date: '02.01.2022', massage: 'Katze füttern ' }];
 
     this.dayName = {
       en: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
@@ -254,7 +263,6 @@ export class Calender {
 
     let tr = document.createElement('tr');
 
-
     let thText = ['<', monthName, '>']
     tr.style.backgroundColor = 'green'
     let thId = ['previous', 'calender-month', 'next']
@@ -304,14 +312,11 @@ export class Calender {
       section.style.width = this.sectionWith
       section.style.height = this.sectionHeight
       
-
       section.appendChild(table)
       return section;
     }else{
       return table
     }
-    
-
     
   }
 
@@ -325,7 +330,7 @@ export class Calender {
 
     if (evt.target.localName === 'td' && evt.target.innerText > 0) {
 
-      let event = this.showEvent(evt)
+      return this.showEvent(evt)
       
     } else if (evt.target.localName === 'th' && evt.target.id === 'next' && this.showMonth <= 10) {
       
