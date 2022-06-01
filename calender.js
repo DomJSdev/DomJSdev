@@ -32,8 +32,6 @@ export class Calender {
     this.date = new Date();
     this.year = this.date.getFullYear();
     this.month = this.date.getMonth();
-    this.clickNext = 0
-    this.clickPrevious = 0
     this.showMonth = this.month
 
     this.eventColor = eventColor;
@@ -233,7 +231,7 @@ export class Calender {
             }
 
             td.innerText = countDay;
-            let idmonth = month+1
+            let idmonth = this.showMonth+1
             td.id = `${countDay <= 9 ? '0' + countDay : countDay}.${idmonth <= 9 ? '0' + idmonth : idmonth }.${year}`;
 
                 for (let eventIndex = 0; eventIndex < this.events.length; eventIndex++) {
