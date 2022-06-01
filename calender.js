@@ -238,7 +238,7 @@ export class Calender {
 
                 for (let eventIndex = 0; eventIndex < this.events.length; eventIndex++) {
 
-                  if (event[eventIndex].date === td.id) {
+                  if (this.events[eventIndex].date === td.id) {
                     td.style.backgroundColor = this.eventColor
                   }
                 }
